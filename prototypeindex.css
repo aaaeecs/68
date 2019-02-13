@@ -1,0 +1,10 @@
+.headbar {
+    height: 80px;
+    background-color: grey;
+}
+
+.logoimage {
+
+    max-height: 100px;
+    max-width: 100px;
+}
