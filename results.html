@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="results.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="results.js"></script>
+<title> Results </title>
+</head>
+
+<body>
+  <div class="navbar" id="TopNav">
+    <img class="logoimage" src="images/AAA.png" alt="Italian Trulli">
+
+    <!-- <a href="#home" class="notactive">LOGO</a>-->
+    <a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >SignIn</a>
+    <!-- <a id="SignIn" href="#signin" class="material-icons">account_circle</a> -->
+    <a id="About" href="#about">About</a>
+    <a id="Home" href="#home" class="active" onclick="updateHomeNav();" >Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="openBurgerMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</body>
+
+<div class="spacingnav">
+</div>
+<div class="filterbar" id="MainFilter">
+  <form class="searchinfilter" action="#home">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+<h2> Distance </h2>
+<div class="bar-wrapper">
+  <input type="range" id="distance-bar" name="distance" min="0" max="15">
+  <p> 0 miles </p>
+  <p id="updatedmiles"> 15 miles </p>
+  </div>
+<h2> Categories </h2>
+
+<label class="container">Elderly
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Medical
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Childhood
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Homeless
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Outdoor
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Indoor
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+</div>
+
+<div class="searchresults" id="MainResults">
+</div>
+
+
+</html>
