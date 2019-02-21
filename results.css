@@ -197,6 +197,7 @@ form.searchinfilter button {
   transform: rotate(45deg);
 }
 .bar-wrapper {
+  margin-top:60px;
 
 }
 #updatedmiles {
