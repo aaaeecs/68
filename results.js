@@ -1,3 +1,4 @@
+
 function openBurgerMenu() {
   var topnavbar = document.getElementById("TopNav");
   if (topnavbar.className === "navbar") {
@@ -29,7 +30,9 @@ function updateDistance() {
 
 function updateResults() {
   var x = document.getElementById("loading-bar");
+  var y = document.getElementById("loading-blank");
   x.style.display = "inline-block";
+  y.style.display = "inline-block";
   setTimeout(function(){ x.style.display = "none" }, 3000);
-
+  setTimeout(function(){ y.style.display = "none" }, 3000);
 }

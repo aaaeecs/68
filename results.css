@@ -129,7 +129,21 @@ p {
   padding-top: 10px;
   background-color: #F5F5F5;
   width: 900px;
-  height: 922px;
+  height: 935px;
+
+}
+
+.loading-child {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 900px;
+  height: 935px;
+  background-color: white;
+  opacity: 0.9;
 
 }
 
@@ -323,6 +337,8 @@ form.searchinfilter button:hover {
   position: relative;
   width: 64px;
   height: 64px;
+  margin-top: 300px;
+  margin-left: 418px;
 }
 .lds-facebook div {
   display: inline-block;
