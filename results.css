@@ -4,6 +4,7 @@ body {
 }
 
 h2 {
+  font-weight: bold;
   margin-top: 5px;
   margin-left: 5px;
 }
@@ -109,10 +110,9 @@ p {
 }
 
 .filterbar {
-
+  position: fixed;
   font-family: Montserrat;
   background-color: #F5F5F5;
-  position: relative;
   float:left;
   /*border-style: solid;
   border-color: black;
@@ -131,7 +131,7 @@ p {
   padding-top: 10px;
   background-color: #F5F5F5;
   width: 900px;
-  height: 935px;
+  height: 1880px;
 
 }
 
@@ -143,13 +143,13 @@ p {
   right: 0;
   bottom: 0;
   width: 900px;
-  height: 935px;
+  height: 1890px;
   background-color: white;
   opacity: 0.9;
 
 }
 
-form.searchinfilter input[type=text] {
+.searchinfilter input[type=text] {
   height: 50px;
   padding: 10px;
   font-size: 17px;
@@ -162,7 +162,7 @@ form.searchinfilter input[type=text] {
 
 }
 
-form.searchinfilter button {
+.searchinfilter button {
   height: 50px;
   float: left;
   width: 20%;
@@ -175,7 +175,7 @@ form.searchinfilter button {
   cursor: pointer;
 }
 
-form.searchinfilter button:hover {
+.searchinfilter button:hover {
   background-color: #00ec82;
 }
 
@@ -272,6 +272,7 @@ form.searchinfilter button:hover {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
 
 
@@ -301,11 +302,15 @@ form.searchinfilter button:hover {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  transition: 0.2s;
 }
 
 .button:hover {
   background-color: #555;
+  transition: 0.2;
 }
+
+
 .images {
   width: 100%;
 }
@@ -353,10 +358,10 @@ form.searchinfilter button:hover {
 
 .lds-facebook {
   display: none;
-  position: relative;
+  position: fixed;
   width: 64px;
   height: 64px;
-  margin-top: 300px;
+  margin-top: 250px;
   margin-left: 418px;
 }
 .lds-facebook div {
@@ -388,4 +393,23 @@ form.searchinfilter button:hover {
     top: 19px;
     height: 26px;
   }
+}
+
+.TomorrowEvent {
+  color: red;
+}
+
+.ThisWeekEvent {
+  color: green;
+}
+
+#TomorrowEventCard {
+  border: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+.card:hover {
+  transition: 0.5s;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2), 0 10px 10px 0 rgba(0,0,0,0.19);
 }

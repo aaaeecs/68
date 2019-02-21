@@ -1,3 +1,25 @@
+var z = "";
+//For updating tags - project_7
+var advocacytag = "Advocacy and Human Rights";
+var animalstag = "Animals";
+var childrentag = "Children and Youth";
+var disastertag = "Disaster Relief";
+var educationtag = "Education and Literacy";
+var healthtag = "Health and Medicine";
+var homelessnesstag = "Homelesness and Housing";
+var seniorstag = "Seniors";
+var veteranstag = "Veterans";
+
+var advocacybool = false;
+var animalsbool = false;
+var childrenbool = false;
+var disasterbool = false;
+var educationbool = false;
+var healthbool = false;
+var homelessnessbool = false;
+var seniorsbool = false;
+var veteransbool = false;
+
 
 function openBurgerMenu() {
   var topnavbar = document.getElementById("TopNav");
@@ -37,7 +59,7 @@ function updateDistance() {
   document.getElementById("UpdateButton").classList.remove("UpdateResultsGrey")
   document.getElementById("UpdateButton").classList.add("UpdateResults")
   var x = document.getElementById("distance-bar").value;
-  document.getElementById("distance-miles").innerHTML = " " + x + " " + "miles";
+  document.getElementById("distance-miles").innerHTML = "Up to " + x + " " + "miles";
 }
 
 
@@ -46,6 +68,7 @@ function updateResults() {
   var y = document.getElementById("loading-blank");
   x.style.display = "inline-block";
   y.style.display = "inline-block";
+  updateTags();
   setTimeout(function(){ x.style.display = "none" }, 3000);
   setTimeout(function(){ y.style.display = "none" }, 3000);
   document.getElementById("UpdateButton").classList.add("UpdateResultsGrey")
@@ -55,4 +78,85 @@ function updateResults() {
 function changeButton() {
   document.getElementById("UpdateButton").classList.remove("UpdateResultsGrey")
   document.getElementById("UpdateButton").classList.add("UpdateResults")
+}
+
+function advocacy() {
+  advocacybool = true;
+  z = advocacytag;
+  changeButton();
+}
+
+function animals() {
+  animalsbool = true;
+  z = animalstag;
+  changeButton();
+}
+
+function childrenfunc() {
+  childrenbool = true;
+  z = childrentag;
+  changeButton();
+}
+
+function disaster() {
+  disasterbool = true;
+  z = disastertag;
+  changeButton();
+}
+
+function education() {
+  educationbool = true;
+  z = educationtag;
+  changeButton();
+}
+
+function health() {
+  healthbool = true;
+  z = healthtag;
+  changeButton();
+}
+
+function homelessness() {
+  homelessnessbool = true;
+  z = homelessnesstag;
+  changeButton();
+}
+
+function seniors() {
+  seniorsbool = true;
+  z = seniorstag;
+  changeButton();
+}
+
+function veterans() {
+  veteransbool = true;
+  z = veteranstag;
+  changeButton();
+}
+
+function updateTags() {
+  document.getElementById("tag1").innerHTML = z;
+  document.getElementById("tag2").innerHTML = z;
+  document.getElementById("tag3").innerHTML = z;
+  document.getElementById("tag4").innerHTML = z;
+  document.getElementById("tag5").innerHTML = z;
+  document.getElementById("tag6").innerHTML = z;
+  document.getElementById("tag7").innerHTML = z;
+  document.getElementById("tag8").innerHTML = z;
+  document.getElementById("tag9").innerHTML = z;
+  document.getElementById("tag10").innerHTML = z;
+}
+
+function searchUpdateTags() {
+  z = document.getElementById("search-bar-filter").value;
+  updateResults();
+}
+
+function updateButton1Text() {
+  document.getElementById("button1").style.transition = "all 2s";
+  document.getElementById("button1").innerHTML = "There are still 5 spots available. Register your interest today!";
+}
+
+function returnButton1Text() {
+  document.getElementById("button1").innerHTML = "Learn More!";
 }
