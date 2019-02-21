@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script type="text/javascript" src="results.js"></script>
+
 <title> Results </title>
 </head>
 
@@ -16,7 +17,7 @@
     <b>    it's your turn to take action...</b>
 
     <!-- <a href="#home" class="notactive">LOGO</a>-->
-    <a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >SignIn</a>
+    <a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >Sign In</a>
     <!-- <a id="SignIn" href="#signin" class="material-icons">account_circle</a> -->
     <a id="About" href="#about" class="notactive" onclick="updateAboutNav()">About</a>
     <a id="Home" href="#home" class="active" onclick="updateHomeNav();" >Home</a>
@@ -29,60 +30,60 @@
 <div class="spacingnav">
 </div>
 <div class="filterbar" id="MainFilter">
-  <form class="searchinfilter" action="#home">
-    <input type="text" placeholder="Search.." name="search">
+  <div class="searchinfilter">
+    <input class="searchinfilter" id = "search-bar-filter" type="text" placeholder="Search.." name="search" onchange="searchUpdateTags()">
     <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
+  </div>
 <div class="bar-wrapper">
-  <h2> Distance </h2>
+  <h2> Distance from Evanston</h2>
   <input type="range" id="distance-bar" oninput="updateDistance()" onchange="updateDistance()" name="distance" min="0" max="15" value="0">
   <p id="distance-miles">0 miles</p>
   </div>
 <h2> Categories </h2>
 
 <label class="container">Advocacy and Human Rights
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="advocacy()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Animals
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="animals()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Children and Youth
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="childrenfunc();">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Disaster Relief
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="disaster()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Education and Literacy
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="education()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Health and Medicine
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="health()">
   <span class="checkmark"></span>
 </label>
 
 
 <label class="container">Homeless and Housing
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="homelessness()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Seniors
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="seniors()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Veterans
-  <input type="checkbox" onclick="changeButton()">
+  <input type="checkbox" onclick="veterans()">
   <span class="checkmark"></span>
 </label>
 
@@ -93,11 +94,75 @@
   <div id="loading-blank" class="loading-child"><div id="loading-bar" class="lds-facebook"><div></div><div></div><div></div></div> </div>
   <div class="searchresults-top">
     <div class="column-top">
+      <div class="card" id="TomorrowEventCard">
+        <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
+        <div class="content-container">
+          <h2>Event Name</h2>
+          <p class="title" id="tag1">Health and Medicine</p>
+          <p>Some Event Description...</p>
+          <p class="TomorrowEvent">Date: Tomorrow at 6pm!</p>
+          <p><button class="button">Learn More!</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column-top">
+      <div class="card">
+        <img src="images/thomas-young-634092-unsplash.jpg" alt="Jane" class="images">
+        <div class="content-container">
+          <h2>Event Name</h2>
+          <p class="title" id="tag2">Children and Youth</p>
+          <p>Some Event Description...</p>
+          <p class="ThisWeekEvent">Date: This Thursday at 1pm until 3pm</p>
+          <p><button id="button1" class="button" onmouseover="updateButton1Text()" onmouseout="returnButton1Text()">Learn More!</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="searchresults-bottom">
+    <div class="column-bottom">
+    <div class="card">
+      <img src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
+      <div class="content-container">
+        <h2>Event Name</h2>
+        <p class="title" id="tag3">Homeless and Housing</p>
+        <p>Some Event Description...</p>
+        <p>Date: Some Date</p>
+        <p><button class="button">Learn More!</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column-bottom">
+    <div class="card">
+      <img src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
+      <div class="content-container">
+        <h2>Event Name</h2>
+        <p class="title" id="tag4">Seniors</p>
+        <p>Some Event Description...</p>
+        <p>Date: Some Date</p>
+        <p><button class="button">Learn More!</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column-bottom">
+    <div class="card">
+      <img src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
+      <div class="content-container">
+        <h2>Event Name</h2>
+        <p class="title" id="tag5">Education and Literacy</p>
+        <p>Some Event Description...</p>
+        <p>Date: Some Date</p>
+        <p><button class="button">Learn More!</button></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="searchresults-top">
+    <div class="column-top">
       <div class="card">
         <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
         <div class="content-container">
           <h2>Event Name</h2>
-          <p class="title">Health and Medicine</p>
+          <p class="title" id="tag6">Health and Medicine</p>
           <p>Some Event Description...</p>
           <p>Date: Some Date</p>
           <p><button class="button">Learn More!</button></p>
@@ -109,7 +174,7 @@
         <img src="images/thomas-young-634092-unsplash.jpg" alt="Jane" class="images">
         <div class="content-container">
           <h2>Event Name</h2>
-          <p class="title">Children and Youth</p>
+          <p class="title" id = "tag7">Children and Youth</p>
           <p>Some Event Description...</p>
           <p>Date: Some Date</p>
           <p><button class="button">Learn More!</button></p>
@@ -123,7 +188,7 @@
       <img src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
       <div class="content-container">
         <h2>Event Name</h2>
-        <p class="title">Homeless and Housing</p>
+        <p class="title" id = "tag8">Homeless and Housing</p>
         <p>Some Event Description...</p>
         <p>Date: Some Date</p>
         <p><button class="button">Learn More!</button></p>
@@ -135,7 +200,7 @@
       <img src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
       <div class="content-container">
         <h2>Event Name</h2>
-        <p class="title">Seniors</p>
+        <p class="title" id = "tag9">Seniors</p>
         <p>Some Event Description...</p>
         <p>Date: Some Date</p>
         <p><button class="button">Learn More!</button></p>
@@ -147,7 +212,7 @@
       <img src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
       <div class="content-container">
         <h2>Event Name</h2>
-        <p class="title">Education and Literacy</p>
+        <p class="title" id = "tag10">Education and Literacy</p>
         <p>Some Event Description...</p>
         <p>Date: Some Date</p>
         <p><button class="button">Learn More!</button></p>
