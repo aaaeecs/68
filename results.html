@@ -12,13 +12,13 @@
 
 <body>
   <div class="navbar" id="TopNav">
-    <img class="logoimage" src="images/AAAnewlogo.png" alt="Italian Trulli">
+    <c><img class="logoimage" src="images/AAAnewlogo.png" alt="Italian Trulli" onclick="updateHomeNav()"></c>
     <b>    it's your turn to take action...</b>
 
     <!-- <a href="#home" class="notactive">LOGO</a>-->
     <a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >SignIn</a>
     <!-- <a id="SignIn" href="#signin" class="material-icons">account_circle</a> -->
-    <a id="About" href="#about">About</a>
+    <a id="About" href="#about" class="notactive" onclick="updateAboutNav()">About</a>
     <a id="Home" href="#home" class="active" onclick="updateHomeNav();" >Home</a>
     <a href="javascript:void(0);" class="icon" onclick="openBurgerMenu()">
       <i class="fa fa-bars"></i>
@@ -41,56 +41,56 @@
 <h2> Categories </h2>
 
 <label class="container">Advocacy and Human Rights
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Animals
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Children and Youth
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Disaster Relief
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Education and Literacy
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Health and Medicine
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
 
 <label class="container">Homeless and Housing
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Seniors
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
 <label class="container">Veterans
-  <input type="checkbox">
+  <input type="checkbox" onclick="changeButton()">
   <span class="checkmark"></span>
 </label>
 
-<button type="submit" class="UpdateResults" onclick="updateResults()">Update Results</button>
-<div id="loading-bar" class="lds-facebook"><div></div><div></div><div></div></div>
+<button id="UpdateButton" type="submit" class="UpdateResultsGrey" onclick="updateResults()">Update Results</button>
 </div>
 
 <div class="searchresults" id="MainResults">
+  <div id="loading-blank" class="loading-child"><div id="loading-bar" class="lds-facebook"><div></div><div></div><div></div></div> </div>
   <div class="searchresults-top">
     <div class="column-top">
       <div class="card">

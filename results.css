@@ -46,15 +46,17 @@ p {
   float: left;
   font-style: italic;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 15px;
   padding-left: 10px;
   font-size: 17px;
   color: white;
 
 }
+
+
 .navbar a:hover {
   /*background-color: lightgrey;*/
-  background-color: #00ec82;
+  background-color: #07f29c;
   -webkit-transition-duration: 0.4s;
 }
 
@@ -129,7 +131,21 @@ p {
   padding-top: 10px;
   background-color: #F5F5F5;
   width: 900px;
-  height: 922px;
+  height: 935px;
+
+}
+
+.loading-child {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 900px;
+  height: 935px;
+  background-color: white;
+  opacity: 0.9;
 
 }
 
@@ -293,6 +309,23 @@ form.searchinfilter button:hover {
 .images {
   width: 100%;
 }
+.UpdateResultsGrey {
+  background-color: #E0E0E0;
+  font-family: sans-serif;
+  border: none;
+  color: #757575;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 80px;
+  border-radius: 23px;
+}
 
 .UpdateResults {
   background-color: #07f29c;
@@ -323,6 +356,8 @@ form.searchinfilter button:hover {
   position: relative;
   width: 64px;
   height: 64px;
+  margin-top: 300px;
+  margin-left: 418px;
 }
 .lds-facebook div {
   display: inline-block;
