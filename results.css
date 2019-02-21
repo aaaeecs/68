@@ -204,3 +204,67 @@ form.searchinfilter button {
   float: right;
   margin-top:-35px;
 }
+
+
+.column-top {
+  float: left;
+  width: 434px;
+  height: 
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+
+.column-bottom {
+  margin-top:16px;
+  float: left;
+  width: 284px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.content-container {
+
+  padding: 0 16px;
+}
+
+
+.content-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.images {
+  width: 100%;
+}
+
+
+
+
