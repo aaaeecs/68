@@ -27,4 +27,9 @@ function updateDistance() {
 }
 
 
+function updateResults() {
+  var x = document.getElementById("loading-bar");
+  x.style.display = "inline-block";
+  setTimeout(function(){ x.style.display = "none" }, 3000);
 
+}
