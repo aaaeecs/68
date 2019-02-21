@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Merriweather;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
@@ -35,8 +35,9 @@ p {
 }
 
 .navbar a:hover {
-  background-color: lightgrey;
-  /*color: grey;*/
+  /*background-color: lightgrey;*/
+  background-color: #00ec82;
+  -webkit-transition-duration: 0.4s;
 }
 
 .active {
@@ -88,12 +89,15 @@ p {
 }
 
 .filterbar {
+
+  font-family: Montserrat;
   background-color: #F5F5F5;
   position: relative;
   float:left;
   /*border-style: solid;
   border-color: black;
   border-width: 2px;*/
+
   margin-left: 75px;
   width: 300px;
   height: 600px;
@@ -119,6 +123,9 @@ form.searchinfilter input[type=text] {
   float: left;
   width: 80%;
   background: #F5F5F5;
+
+  /*background: #f1f1f1;*/
+
 }
 
 form.searchinfilter button {
@@ -132,6 +139,10 @@ form.searchinfilter button {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+}
+
+form.searchinfilter button:hover {
+  background-color: #00ec82;
 }
 
 #distance-bar {
@@ -325,4 +336,4 @@ form.searchinfilter button {
     height: 26px;
   }
 }
-=======
+
