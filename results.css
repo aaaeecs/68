@@ -14,26 +14,44 @@ p {
 }
 
 .navbar {
-  background-color: #F5F5F5;
+  background-color: #3e2723;
   overflow: hidden;
   position: fixed;
   width: 100%;
+  z-index: 500;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
+
 
 }
 .logoimage {
+  float: left;
+  padding-top: 5px;
+  margin-left: 5px;
   max-width: 100px;
-  max-height: 50px;
+  max-height: 40px;
 }
 .navbar a {
   float: left;
   display: block;
-  color: #1a1a1a;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+
 }
 
+.navbar b {
+  display: block;
+  float: left;
+  font-style: italic;
+  text-align: center;
+  padding-top: 22px;
+  padding-left: 10px;
+  font-size: 17px;
+  color: white;
+
+}
 .navbar a:hover {
   /*background-color: lightgrey;*/
   background-color: #00ec82;
@@ -107,12 +125,12 @@ p {
 
 .searchresults {
   position: relative;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
   margin-left: 450px;
+  padding-top: 10px;
+  background-color: #F5F5F5;
   width: 900px;
-  height: 600px;
+  height: 922px;
+
 }
 
 form.searchinfilter input[type=text] {
@@ -263,7 +281,7 @@ form.searchinfilter button:hover {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #5d4037;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -311,7 +329,7 @@ form.searchinfilter button:hover {
   position: absolute;
   left: 6px;
   width: 13px;
-  background: #e2fdee;
+  background: #260e04;
   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 .lds-facebook div:nth-child(1) {
