@@ -32,9 +32,8 @@
   </form>
 <div class="bar-wrapper">
   <h2> Distance </h2>
-  <input type="range" id="distance-bar" name="distance" min="0" max="15" value="0">
-  <p> 0 miles </p>
-  <p id="updatedmiles"> 15 miles </p>
+  <input type="range" id="distance-bar" oninput="updateDistance()" onchange="updateDistance()" name="distance" min="0" max="15" value="0">
+  <p id="distance-miles">0 miles</p>
   </div>
 <h2> Categories </h2>
 

@@ -20,3 +20,11 @@ function updateHomeNav() {
   document.getElementById("Home").classList.add('active');
   document.getElementById("Home").classList.remove('notactive');
 }
+
+function updateDistance() {
+  var x = document.getElementById("distance-bar").value;
+  document.getElementById("distance-miles").innerHTML = " " + x + " " + "miles";
+}
+
+
+
