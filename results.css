@@ -16,6 +16,8 @@ p {
 
 .navbar {
   background-color: #3e2723;
+  /*border-bottom: solid;
+  border-color: #3e2723;*/
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -412,4 +414,75 @@ p {
 .card:hover {
   transition: 0.5s;
   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+
+.featurebar {
+  width:900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainsearch {
+  padding-top: 10px;
+  width: 900px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature {
+  background-color: #F5F5F5;
+  width: 910px;
+  height: 530px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.led-box {
+  position: absolute;
+  margin-top: -290px;
+  height: 30px;
+  width: 25%;
+  margin: 10px 0;
+  float: left;
+}
+
+.led-red {
+  position: absolute;
+  margin-top: -290;
+  margin-left: 410px;
+  width: 16px;
+  height: 16px;
+  background-color: #FF0;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;  -webkit-animation: blinkRed 1s infinite;
+  -moz-animation: blinkRed 2s infinite;
+  -ms-animation: blinkRed 2s infinite;
+  -o-animation: blinkRed 2s infinite;
+  animation: blinkRed 2s infinite;
+}
+
+@-webkit-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-moz-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-ms-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-o-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
 }
