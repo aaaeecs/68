@@ -15,14 +15,15 @@ p {
 }
 
 .navbar {
-  background-color: #3e2723;
-  /*border-bottom: solid;
-  border-color: #3e2723;*/
+  /*background-color: #3e2723;*/
+  background-color: #F5F5F5;
+  border-bottom: solid;
+  border-color: #3e2723;
   overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 500;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
+  /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);*/
 
 
 }
@@ -36,7 +37,7 @@ p {
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: #3e2723;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
