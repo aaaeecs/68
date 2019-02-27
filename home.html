@@ -10,28 +10,31 @@
 
 <title> Home </title>
 </head>
+<video autoplay muted loop id="myVideo">
+  <source src="Beetle-Nut-Trees.mp4" type="video/mp4">
+</video>
 
 <body>
   <div class="navbar" id="TopNav">
     <c><img class="logoimage" src="images/AAAnewlogo.png" alt="Italian Trulli" onclick="updateHomeNav()"></c>
-    <b>    it's your turn to take action...</b>
+
 
     <!-- <a href="#home" class="notactive">LOGO</a>-->
     <a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >Sign In</a>
     <!-- <a id="SignIn" href="#signin" class="material-icons">account_circle</a> -->
-    <a id="About" href="#about" class="notactive" onclick="updateAboutNav()">About</a>
+    <a id="About" href="homeb.html" class="notactive" onclick="updateAboutNav()">About</a>
     <a id="Home" href="home.html" class="active" onclick="updateHomeNav();" >Home</a>
     <a href="javascript:void(0);" class="icon" onclick="openBurgerMenu()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
-</body>
-<div class="spacingnav">
-</div>
+
+<div class="spacingnav"></div>
 <div class="feature">
 <div class="mainsearch">
-<div class="searchinfilter">
-  <input class="searchinfilter" id = "search-bar-filter" type="text" placeholder="Search.." name="search" onchange="results.html">
+  <h1> Your service journey starts here </h1>
+<div class="searchinfilterhome">
+  <input class="searchinfilterhome" id = "search-bar-filter" type="text" placeholder="Search.." name="search" onchange="results.html">
   <button type="submit"><i class="fa fa-search"  onclick="results.html"></i></button>
 </div>
 </div>
@@ -40,19 +43,19 @@
   <div class="column-bottom">
   <div class="card">
     <img src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
-    <div class="content-container">
+    <div class="content-container homepagecard">
       <h2>Event Name</h2>
       <p class="title" id="tag3">Homeless and Housing</p>
       <p>Some Event Description...</p>
       <p>Date: Some Date</p>
-      <p><a button class="button" href="results.html">Learn More!</a></p>
+      <p><button class="button" href="results.html">Learn More!</button></p>
     </div>
   </div>
 </div>
 <div class="column-bottom">
   <div class="card">
     <img src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
-    <div class="content-container">
+    <div class="content-container homepagecard">
       <h2>Event Name</h2>
       <p class="title" id="tag4">Seniors</p>
       <p>Some Event Description...</p>
@@ -64,7 +67,7 @@
 <div class="column-bottom">
   <div class="card">
     <img src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
-    <div class="content-container">
+    <div class="content-container homepagecard">
       <h2>Event Name</h2>
       <p class="title" id="tag5">Education and Literacy</p>
       <p>Some Event Description...</p>
@@ -75,5 +78,11 @@
 </div>
 </div>
 </div>
+
+
+
+</body>
+
+
 
 </html>

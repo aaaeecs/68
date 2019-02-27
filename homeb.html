@@ -1,0 +1,116 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="newcss.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="results.js"></script>
+
+<title> Home </title>
+</head>
+<video autoplay muted loop id="myVideob">
+  <source src="Autoplay HTML videos.m4v" type="video/mp4">
+</video>
+
+<body>
+  <div class="main-wrapper">
+  <div class="newnav" id="newTopNav">
+    <c><img class="newlogoimage" src="images/AAAnewlogo.png" alt="Italian Trulli" onclick="updateHomeNav()"></c>
+
+
+    <!-- <a href="#home" class="notactive">LOGO</a>-->
+    <a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >Sign In</a>
+    <!-- <a id="SignIn" href="#signin" class="material-icons">account_circle</a> -->
+    <a id="About" href="home.html" class="notactive" onclick="updateAboutNav()">About</a>
+    <a id="Home" href="homeb.html" class="active" onclick="updateHomeNav();" >Home</a>
+
+  </div>
+
+<!--<div class="navbar" id="TopNav">
+    <c><img class="logoimage" src="images/AAAnewlogo.png" alt="Italian Trulli" onclick="updateHomeNav()"></c>
+
+
+    <!-- <a href="#home" class="notactive">LOGO</a>-->
+    <!--<a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >Sign In</a>
+    <!-- <a id="SignIn" href="#signin" class="material-icons">account_circle</a> -->
+    <!--<a id="About" href="#about" class="notactive" onclick="updateAboutNav()">About</a>
+    <a id="Home" href="home.html" class="active" onclick="updateHomeNav();" >Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="openBurgerMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>-->
+
+<div class="spacingnav"></div>
+<div class="feature">
+<div class="mainsearch">
+  <h1> Your service journey starts here </h1>
+<div class="searchinfilterhome">
+  <input class="searchinfilterhome" id = "search-bar-filter" type="text" placeholder="Search.." name="search" onchange="results.html">
+  <button type="submit"><i class="fa fa-search" onclick="window.location.href='results.html';"></i></button>
+</div>
+</div>
+
+<section id="section04" class="scrollbutton">
+  <a href="#bottomresults"><span></span></a>
+</section>
+
+</div>
+
+
+<section id="bottomresults" class="bottomlevel">
+  <div class="featurebar">
+  <div class="searchresults-bottom">
+    <div class="column-bottom">
+    <div class="card">
+      <img src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
+      <div class="content-container homepagecard">
+        <h2>Event Name</h2>
+        <p class="title" id="tag3">Homeless and Housing</p>
+        <p>Some Event Description...</p>
+        <p>Date: Some Date</p>
+        <p><button class="button" href="results.html">Learn More!</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column-bottom">
+    <div class="card">
+      <img src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
+      <div class="content-container homepagecard">
+        <h2>Event Name</h2>
+        <p class="title" id="tag4">Seniors</p>
+        <p>Some Event Description...</p>
+        <p>Date: Some Date</p>
+        <p><button class="button">Learn More!</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column-bottom">
+    <div class="card">
+      <img src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
+      <div class="content-container homepagecard">
+        <h2>Event Name</h2>
+        <p class="title" id="tag5">Education and Literacy</p>
+        <p>Some Event Description...</p>
+        <p>Date: Some Date</p>
+        <p><button class="button">Learn More!</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+</section>
+</div>
+
+
+
+</body>
+
+
+
+
+</html>
