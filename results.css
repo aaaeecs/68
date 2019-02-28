@@ -125,7 +125,7 @@ h1 {
 
 .filterbar {
   position: fixed;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   background-color: #F5F5F5;
   float:left;
   /*border-style: solid;
@@ -302,8 +302,9 @@ h1 {
   display: table;
 }
 
-.title {
+.Event-Category {
   color: grey;
+  font-family: 'Poppins';
 }
 
 .button {
@@ -434,6 +435,13 @@ h1 {
   float: left;
   color: black;
 }
+
+.Event-Description {
+  font-family: 'Poppins';
+}
+
+
+
 
 #TomorrowEventCard {
   border: solid;
