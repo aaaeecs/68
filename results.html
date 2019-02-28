@@ -14,7 +14,7 @@
 <body>
   <div class="navbar" id="TopNav">
     <c><img class="logoimage" src="images/AAAnewlogo.png" alt="Italian Trulli" onclick="updateHomeNav()"></c>
-  
+
 
     <!-- <a href="#home" class="notactive">LOGO</a>-->
     <a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >Sign In</a>
@@ -39,6 +39,18 @@
   <input type="range" id="distance-bar" oninput="updateDistance()" onchange="updateDistance()" name="distance" min="0" max="15" value="0">
   <p id="distance-miles">0 miles</p>
   </div>
+
+<h2> When </h2>
+
+<div class="time-button-wrapper">
+  
+  <button class="time-button" type="submit" onclick="updateResults()">3 days </button>
+
+  <button class="time-button" type="submit" onclick="updateResults()">1 week </button>
+
+  <button class="time-button" type="submit" onclick="updateResults()">1 month</button>
+</div>
+
 <h2> Categories </h2>
 
 <label class="container">Advocacy and Human Rights
@@ -96,9 +108,6 @@
     <div class="column-top">
       <div class="card" id="TomorrowEventCard">
         <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
-        <div class="led-box">
-          <div class="led-red"></div>
-        </div>
         <div class="content-container">
           <h2>Event Name</h2>
           <p class="title" id="tag1">Health and Medicine</p>
