@@ -351,6 +351,7 @@ h1 {
   padding: 8px;
   color: white;
   background-color: #5d4037;
+  font-size: 15px;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -741,3 +742,23 @@ h3 {
   max-width: 20px;
   max-height: 20px;
 }
+
+.Event-Category {
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Event-Description {
+  font-family: 'Poppins', sans-serif;
+}
+
+.Event-Date {
+  font-family: 'Poppins', sans-serif;
+}
+
+.Event-Title {
+  font-family: ;
+}
+
+
+
