@@ -158,7 +158,7 @@ h1 {
   bottom: 0;
   width: 900px;
   height: 1890px;
-  background-color: white;
+  background-color: #F5F5F5;
   opacity: 0.9;
 
 }
@@ -411,17 +411,40 @@ h1 {
 }
 
 .TomorrowEvent {
-  color: red;
+  margin-top: 0px;
+  float: left;
+  color: #f2075d;
 }
 
+.TomorrowEventbold {
+  margin-top: 0px;
+  float: left;
+  color: black;
+}
+
+
 .ThisWeekEvent {
-  color: green;
+  margin-top: 0px;
+  float: left;
+  color: #00b500;
+}
+
+.ThisWeekEventbold {
+  margin-top: 0px;
+  float: left;
+  color: black;
 }
 
 #TomorrowEventCard {
   border: solid;
   border-width: 1px;
-  border-color: red;
+  border-color: #f2075d;
+}
+
+#ThisWeekEventCard {
+  border: solid;
+  border-width: 1px;
+  border-color: #00b500;
 }
 
 .card:hover {
@@ -591,12 +614,23 @@ h1 {
   background-color: #07f29c;
 }
 
+.time-button:hover {
+  background-color: #07f29c;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.time-button-active:hover {
+  background-color: #07f29c;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
 .time-button-active {
   float: left;
 
   font-family: sans-serif;
   border: none;
-  color: #757575;
+  color: white;
   padding: 10px 14px;
   text-align: center;
   font-size: 12px;
