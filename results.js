@@ -160,3 +160,50 @@ function updateButton1Text() {
 function returnButton1Text() {
   document.getElementById("button1").innerHTML = "Learn More!";
 }
+
+var Thisweekactive = 0;
+var Thismonthactive = 0;
+var Nextmonthactive = 0;
+
+function updateThisweek() {
+
+
+  if (Thisweekactive == 0) {
+  document.getElementById("Thisweek").classList.remove("time-button")
+  document.getElementById("Thisweek").classList.add("time-button-active")
+  Thisweekactive = 1;
+} else {
+  document.getElementById("Thisweek").classList.add("time-button")
+  document.getElementById("Thisweek").classList.remove("time-button-active")
+  Thisweekactive = 0;
+}
+  changeButton();
+}
+
+function updateThismonth() {
+
+  if (Thismonthactive == 0) {
+  document.getElementById("Thismonth").classList.remove("time-button")
+  document.getElementById("Thismonth").classList.add("time-button-active")
+  Thismonthactive = 1;
+} else {
+  document.getElementById("Thismonth").classList.add("time-button")
+  document.getElementById("Thismonth").classList.remove("time-button-active")
+  Thismonthactive = 0;
+}
+  changeButton();
+}
+
+function updateNextmonth() {
+
+  if (Nextmonthactive == 0) {
+  document.getElementById("Nextmonth").classList.remove("time-button")
+  document.getElementById("Nextmonth").classList.add("time-button-active")
+  Nextmonthactive = 1;
+} else {
+  document.getElementById("Nextmonth").classList.add("time-button")
+  document.getElementById("Nextmonth").classList.remove("time-button-active")
+  Nextmonthactive = 0;
+}
+  changeButton();
+}

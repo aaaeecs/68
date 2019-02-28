@@ -608,6 +608,7 @@ h1 {
 .bottomlevel {
   width: 100%;
   height: auto;
+  opacity: 0.97;
   background-color: white;
   z-index: 1000;
   position: relative;
@@ -683,6 +684,10 @@ h3 {
 }
 
 .regularbut {
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: left;
   float: left;
   margin-left: 30px;
   width: 150px;
@@ -690,7 +695,36 @@ h3 {
 
 }
 
+.regularbutfirst {
+  border-radius: 10px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  float: left;
+  margin-left: 12px;
+  width: 150px;
+  height: 30px;
+
+}
+
+.regularbutfirst:hover {
+  background-color: #07f29c;
+  -webkit-transition-duration: 0.4s;
+}
+.regularbutend:hover {
+  background-color: #07f29c;
+  -webkit-transition-duration: 0.4s;
+}
+.regularbut:hover {
+  background-color: #07f29c;
+  -webkit-transition-duration: 0.4s;
+}
 .regularbutend {
+  border-radius: 10px;
+
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
   margin-left: 30px;
   width: 150px;
   height: 30px;
@@ -699,4 +733,11 @@ h3 {
 
 .searchresults-bottom {
   margin-top: -20px;
+}
+
+.smallbuttonimage {
+  padding-right: 3px;
+  padding-top: 2px;
+  max-width: 20px;
+  max-height: 20px;
 }
