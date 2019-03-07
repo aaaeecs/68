@@ -847,7 +847,7 @@ h3 {
   transition: 0.5s;
   opacity: 1;
   margin-left: 75px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 40px;
   width: 450px;
   height: 500px;
@@ -860,7 +860,7 @@ h3 {
   background-color: #5d4037;
   margin-left: 525px;
   margin-top: 10px;
-  margin-botton: 40px;
+  margin-bottom: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -868,6 +868,47 @@ h3 {
   display: none;
   visibility: hidden;
 }
+
+
+.text-entry {
+  margin-left: 47.5px;
+  margin-top: 35px;
+  font-size: 12.5px;
+  width: 200px;
+  height: 50px;
+}
+
+.sign-up-button {
+   float: left;
+
+  background-color: #E0E0E0;
+  font-family: sans-serif;
+  border: none;
+  color: #757575;
+  padding: 20px 60px;
+  text-align: center;
+  font-size: 17.5px;
+  margin-top: 60px;
+  margin-bottom: 8px;
+
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 57.75px;
+  border-radius: 23px;
+}
+
+.text-entry-title {
+  margin-top: 20px;
+  color: white;
+  font-family: ;
+  text-align: center;
+}
+
+
+
+
 
 .close-button {
   margin-left: 265px;
@@ -899,3 +940,4 @@ h3 {
  .close-button:hover:before, .close-button:hover:after {
 	 transform: rotate(0deg);
 }
+
