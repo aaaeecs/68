@@ -51,8 +51,8 @@
 <div class="mainsearch">
   <h1> Your service journey starts here </h1>
 <div class="searchinfilterhome">
-  <input class="searchinfilterhome" id = "search-bar-filter" type="text" placeholder="Enter ZIP Code..." name="search" onchange="#bottomresults">
-  <button type="submit"><i class="fa fa-search" onclick="window.location.href=#bottomresults"></i></button>
+  <input class="searchinfilterhome" id = "search-bar-filter-origin" type="text" placeholder="Enter ZIP Code..." name="search" onchange="moveScreen(this.value)">
+  <button type="submit"><i class="fa fa-search" onclick="moveScreen()"></i></button>
 </div>
 </div>
 
@@ -186,11 +186,16 @@
       </div>
   </div>
   <div class="register-info">
+
       <h2 class="text-entry-title"> Register </h2>
+     <a onclick=disappearEvent() class="close-button"></a>
       <input class="text-entry" type="text" placeholder="Name..." name="name-entry">
       <input class="text-entry" type="text" placeholder="Email..." name="email-entry">
       <input class="text-entry" type="text" placeholder="Phone-Number..." name="phone-number">
       <button class="sign-up-button" type="submit"> Sign Up! </button>
+
+   
+
   </div>
 </div>
 
@@ -225,7 +230,7 @@
             <p class="Event-Description">Some Event Description...</p>
             <p class="Event-Date ThisWeekEventbold">Date: <p>
             <p class="Event-Date ThisWeekEvent">This Thursday from 1pm - 3pm</p>
-            <p><button id="button1" class="button" onmouseover="updateButton1Text()" onmouseout="returnButton1Text()">Learn More!</button></p>
+            <p><button id="button1" class="button" onmouseover="updateButton1Text()" onmouseout="returnButton1Text()" onclick="revealEvent()">Learn More!</button></p>
           </div>
         </div>
       </div>
@@ -239,7 +244,7 @@
           <p class="Event-Category" id="tag3">Homeless and Housing</p>
           <p class="Event-Description">Some Event Description...</p>
           <p class="Event-Date">Date: Some Date</p>
-          <p><button class="button">Learn More!</button></p>
+          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
         </div>
       </div>
     </div>
@@ -251,7 +256,7 @@
           <p class="Event-Category" id="tag4">Seniors</p>
           <p class="Event-Description">Some Event Description...</p>
           <p class="Event-Date">Date: Some Date</p>
-          <p><button class="button">Learn More!</button></p>
+          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
         </div>
       </div>
     </div>
@@ -263,7 +268,7 @@
           <p class="Event-Category" id="tag5">Education and Literacy</p>
           <p class="Event-Description">Some Event Description...</p>
           <p class="Event-Date">Date: Some Date</p>
-          <p><button class="button">Learn More!</button></p>
+          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
         </div>
       </div>
     </div>
@@ -277,7 +282,7 @@
             <p class="Event-Category" id="tag6">Health and Medicine</p>
             <p class="Event-Description">Some Event Description...</p>
             <p class="Event-Date">Date: Some Date</p>
-            <p><button class="button">Learn More!</button></p>
+            <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
           </div>
         </div>
       </div>
@@ -289,7 +294,7 @@
             <p class="Event-Category" id = "tag7">Children and Youth</p>
             <p class="Event-Description">Some Event Description...</p>
             <p class="Event-Date">Date: Some Date</p>
-            <p><button class="button">Learn More!</button></p>
+            <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
           </div>
         </div>
       </div>
@@ -303,7 +308,7 @@
           <p class="Event-Category" id = "tag8">Homeless and Housing</p>
           <p class="Event-Description">Some Event Description...</p>
           <p class="Event-Date">Date: Some Date</p>
-          <p><button class="button">Learn More!</button></p>
+          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
         </div>
       </div>
     </div>
@@ -315,7 +320,7 @@
           <p class="Event-Category" id = "tag9">Seniors</p>
           <p class="Event-Description">Some Event Description...</p>
           <p class="Event-Date">Date: Some Date</p>
-          <p><button class="button">Learn More!</button></p>
+          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
         </div>
       </div>
     </div>
@@ -327,7 +332,7 @@
           <p class="Event-Category" id = "tag10">Education and Literacy</p>
           <p class="Event-Description">Some Event Description...</p>
           <p class="Event-Date">Date: Some Date</p>
-          <p><button class="button">Learn More!</button></p>
+          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
         </div>
       </div>
     </div>

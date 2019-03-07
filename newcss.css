@@ -869,6 +869,7 @@ h3 {
   visibility: hidden;
 }
 
+
 .text-entry {
   margin-left: 47.5px;
   margin-top: 35px;
@@ -907,4 +908,36 @@ h3 {
 
 
 
+
+
+.close-button {
+  margin-left: 265px;
+  margin-top: 0px;
+	 height: 50px;
+	 width: 50px;
+	 position: relative;
+	 box-sizing: border-box;
+	 line-height: 50px;
+	 display: inline-block;
+}
+ .close-button:before, .close-button:after {
+	 transform: rotate(-45deg);
+	 content: '';
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 margin-top: -5px;
+	 margin-left: -25px;
+	 display: block;
+	 height: 2px;
+	 width: 30px;
+	 background-color: #fff;
+	 transition: all 0.2s ease-out;
+}
+ .close-button:after {
+	 transform: rotate(45deg);
+}
+ .close-button:hover:before, .close-button:hover:after {
+	 transform: rotate(0deg);
+}
 
