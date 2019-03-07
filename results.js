@@ -207,3 +207,30 @@ function updateNextmonth() {
 }
   changeButton();
 }
+
+function sticktothetop() {
+    var window_top = $(window).scrollTop();
+    var top = $('#stick-here').offset().top;
+    if ((window_top+30) > top) {
+        $('#MainFilter').addClass('stick');
+        $('#stick-here').height($('#stickThis').outerHeight());
+    } else {
+        $('#MainFilter').removeClass('stick');
+        $('#stick-here').height(0);
+    }
+}
+$(function() {
+    $(window).scroll(sticktothetop);
+    sticktothetop();
+});
+
+function revealEvent() {
+  var x = document.getElementById("popUpEvent");
+  var y = document.getElementById("bb");
+  x.classList.add("animationpop");
+  x.style.visibility = "visible";
+  y.addEventListener('scroll', noscroll);
+
+
+
+}
