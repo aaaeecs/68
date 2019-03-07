@@ -119,7 +119,7 @@ h1 {
 
 .spacingnav {
   width: 100px;
-  height: 10px;
+  height: 40px;
 
 }
 
@@ -157,8 +157,8 @@ h1 {
   right: 0;
   bottom: 0;
   width: 900px;
-  height: 1890px;
-  background-color: #F5F5F5;
+  height: 1930px;
+  background-color: white;
   opacity: 0.9;
 
 }
