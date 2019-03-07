@@ -246,6 +246,8 @@ function disappearEvent() {
   window.location.hash = "bottomresults";
   var elmnt = document.getElementById("MainResults");
   elmnt.style.height = "2000px";
+  var y = document.getElementById("sign-up");
+  y.innerHTML = "Sign Up!"
 }
 
 function moveScreen() {
@@ -256,4 +258,22 @@ function moveScreen() {
   y.value = x.value;
 
   //window.location = "#moremoremore";
+}
+
+var countforsign = 0;
+
+function incrementCount() {
+  var x = document.getElementById("sign-up");
+  countforsign = countforsign + 1;
+  if (countforsign == 3 ){
+    x.style.background = "#07f29c";
+    x.style.color = 'white';
+  }
+}
+
+function success() {
+    var x = document.getElementById("sign-up");
+    x.innerHTML = "Success!"
+    x.style.background = "#E0E0E0";
+    x.style.color = '#757575';
 }

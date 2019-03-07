@@ -204,7 +204,7 @@ h1 {
   right: 0;
   bottom: 0;
   width: 900px;
-  height: 1890px;
+  height: 2500px;
   background-color: white;
   opacity: 0.9;
 
@@ -423,7 +423,7 @@ h1 {
 .lds-facebook {
 
   display: none;
-  position: fixed;
+  position: absolute;
   width: 64px;
   height: 64px;
   margin-top: 250px;
@@ -900,6 +900,7 @@ h3 {
 }
 
 .text-entry-title {
+  padding-top:20px;
   margin-top: 20px;
   color: white;
   font-family: ;
@@ -911,8 +912,8 @@ h3 {
 
 
 .close-button {
-  margin-left: 265px;
-  margin-top: 0px;
+  margin-left: 263px;
+  margin-top: -70px;
 	 height: 50px;
 	 width: 50px;
 	 position: relative;
@@ -940,4 +941,3 @@ h3 {
  .close-button:hover:before, .close-button:hover:after {
 	 transform: rotate(0deg);
 }
-
