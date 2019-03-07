@@ -232,9 +232,28 @@ function revealEvent() {
   x.style.visibility = "visible";
   x.style.display = "inline-block";
   window.location.hash = "#moremoremore";
+  var elmnt = document.getElementById("MainResults");
+  elmnt.style.height = "2500px";
   //y.addEventListener('scroll', noscroll);
 
+}
 
+function disappearEvent() {
+  var x = document.getElementById("moremore");
+  x.classList.remove("animationpop");
+  x.style.visibility = "hidden";
+  x.style.display = "none";
+  window.location.hash = "bottomresults";
+  var elmnt = document.getElementById("MainResults");
+  elmnt.style.height = "2000px";
+}
 
+function moveScreen() {
+  var y = document.getElementById("search-bar-filter");
+  var x = document.getElementById("search-bar-filter-origin");
+  var elmnt = document.getElementById("MainResults");
+  elmnt.scrollIntoView();
+  y.value = x.value;
 
+  //window.location = "#moremoremore";
 }
