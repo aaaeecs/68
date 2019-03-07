@@ -225,11 +225,15 @@ $(function() {
 });
 
 function revealEvent() {
-  var x = document.getElementById("popUpEvent");
-  var y = document.getElementById("bb");
+  //var x = document.getElementById("popUpEvent");
+  //var y = document.getElementById("bb");
+  var x = document.getElementById("moremore");
   x.classList.add("animationpop");
   x.style.visibility = "visible";
-  y.addEventListener('scroll', noscroll);
+  x.style.display = "inline-block";
+  window.location.hash = "#moremoremore";
+  //y.addEventListener('scroll', noscroll);
+
 
 
 
