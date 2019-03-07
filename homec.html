@@ -189,12 +189,12 @@
 
       <h2 class="text-entry-title"> Register </h2>
      <a onclick=disappearEvent() class="close-button"></a>
-      <input class="text-entry" type="text" placeholder="Name..." name="name-entry">
-      <input class="text-entry" type="text" placeholder="Email..." name="email-entry">
-      <input class="text-entry" type="text" placeholder="Phone-Number..." name="phone-number">
-      <button class="sign-up-button" type="submit"> Sign Up! </button>
+      <input class="text-entry" type="text" onchange = incrementCount() placeholder="Name..." name="name-entry">
+      <input class="text-entry" type="text" onchange = incrementCount() placeholder="Email..." name="email-entry">
+      <input class="text-entry" type="text" onchange = incrementCount() placeholder="Phone-Number..." name="phone-number">
+      <button class="sign-up-button" id = "sign-up" type="submit" onclick=success()> Sign Up! </button>
 
-   
+
 
   </div>
 </div>
