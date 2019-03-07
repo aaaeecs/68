@@ -1,0 +1,324 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="newcss.css">
+<link rel="stylesheet" href="results.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<script type="text/javascript" src="results.js"></script>
+
+<title> Home </title>
+</head>
+<video autoplay muted loop id="myVideob">
+  <source src="Autoplay HTML videos.m4v" type="video/mp4">
+</video>
+
+<body id="bb">
+  <div class="main-wrapper">
+  <div class="newnav" id="newTopNav">
+    <a id="logobutton" href="homec.html" ><img class="newlogoimage" src="images/AAAnewlogo.png" alt="Italian Trulli" onclick="updateHomeNav()"></a>
+
+
+    <!-- <a href="#home" class="notactive">LOGO</a>-->
+    <a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >Sign In</a>
+    <!-- <a id="SignIn" href="#signin" class="material-icons">account_circle</a> -->
+    <a id="About" href="#about" class="notactive" onclick="updateAboutNav()">About</a>
+    <a id="Home" href="homec.html" class="active" onclick="updateHomeNav();" >Home</a>
+
+  </div>
+
+<!--<div class="navbar" id="TopNav">
+    <c><img class="logoimage" src="images/AAAnewlogo.png" alt="Italian Trulli" onclick="updateHomeNav()"></c>
+
+
+    <!-- <a href="#home" class="notactive">LOGO</a>-->
+    <!--<a id="SignIn" href="#signin" class="notactive" onclick="updateSignInNav();" >Sign In</a>
+    <!-- <a id="SignIn" href="#signin" class="material-icons">account_circle</a> -->
+    <!--<a id="About" href="#about" class="notactive" onclick="updateAboutNav()">About</a>
+    <a id="Home" href="home.html" class="active" onclick="updateHomeNav();" >Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="openBurgerMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>-->
+
+<div class="spacingnav"></div>
+<div class="feature">
+<div class="mainsearch">
+  <h1> Your service journey starts here </h1>
+<div class="searchinfilterhome">
+  <input class="searchinfilterhome" id = "search-bar-filter" type="text" placeholder="Enter ZIP Code..." name="search" onchange="#bottomresults">
+  <button type="submit"><i class="fa fa-search" onclick="window.location.href=#bottomresults"></i></button>
+</div>
+</div>
+
+<section id="section04" class="scrollbutton">
+  <a href="#bottomresults"><span></span></a>
+</section>
+
+</div>
+
+
+
+<section id="bottomresults" class="bottomlevel">
+
+
+  <div class="spacingnav">
+  </div>
+  <div class="featurebar">
+  <h3> Popular categories </h3>
+  <div class="homebuttonarray">
+    <button class="regularbutfirst" onclick="window.location.href='results.html';">
+      <img src="servicedog.jpeg" class="smallbuttonimage">Animals</button>
+
+    <button class="regularbut" onclick="window.location.href='results.html';">
+      <img src="medicine.png" class="smallbuttonimage">
+      Health</button>
+
+          <button class="regularbut" onclick="window.location.href='results.html';">
+      <img src="tent.png" class="smallbuttonimage">
+      Homeless</button>
+    <button class="regularbutend" onclick="window.location.href='results.html';">
+      <img src="people.png" class="smallbuttonimage">
+      Seniors</button>
+  </div>
+  <h3> Explore opportunities in Evanston </h3>
+  <!--<button class="filterbut">When </button>
+  <button class="filterbut">When </button>
+  <button class="filterbut">When </button>
+  <button class="filterbut">When </button>
+  <button class="filterbut">When </button>
+  <button class="filterbut">When </button>-->
+
+</div>
+<div id="stick-here"></div>
+<div class="filterbar" id="MainFilter">
+  <div class="searchinfilter">
+    <input class="searchinfilter" id = "search-bar-filter" type="text" placeholder="Search.." name="search" onchange="searchUpdateTags()">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </div>
+<div class="bar-wrapper">
+  <h2> Distance from Evanston</h2>
+  <input type="range" id="distance-bar" oninput="updateDistance()" onchange="updateDistance()" name="distance" min="0" max="15" value="0">
+  <p id="distance-miles">0 miles</p>
+  </div>
+
+<h2 id = "Whenlabel"> When </h2>
+
+<div class="time-button-wrapper">
+
+  <button class="time-button" id = "Thisweek" type="submit" onclick="updateThisweek()">This week </button>
+  <button class="time-button" id = "Thismonth" type="submit" onclick="updateThismonth()">This month </button>
+  <button class="time-button" id = "Nextmonth" type="submit" onclick="updateNextmonth()">Next month</button>
+</div>
+
+<h2> Categories </h2>
+
+<label class="container">Advocacy and Human Rights
+  <input type="checkbox" onclick="advocacy()">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Animals
+  <input type="checkbox" onclick="animals()">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Children and Youth
+  <input type="checkbox" onclick="childrenfunc();">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Disaster Relief
+  <input type="checkbox" onclick="disaster()">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Education and Literacy
+  <input type="checkbox" onclick="education()">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Health and Medicine
+  <input type="checkbox" onclick="health()">
+  <span class="checkmark"></span>
+</label>
+
+
+<label class="container">Homeless and Housing
+  <input type="checkbox" onclick="homelessness()">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Seniors
+  <input type="checkbox" onclick="seniors()">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Veterans
+  <input type="checkbox" onclick="veterans()">
+  <span class="checkmark"></span>
+</label>
+
+<button id="UpdateButton" type="submit" class="UpdateResultsGrey" onclick="updateResults()">Update Results</button>
+</div>
+
+
+  <div class="searchresults" id="MainResults">
+    <div id="loading-blank" class="loading-child"><div id="loading-bar" class="lds-facebook"><div></div><div></div><div></div></div> </div>
+    <div class="searchresults-top">
+      <div class="column-top">
+        <div class="card" id="TomorrowEventCard">
+          <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
+          <div class="content-container">
+            <h2 class="Event-Title">Event Name</h2>
+            <p class="Event-Category" id="tag1">Health and Medicine</p>
+            <p class="Event-Description">Some Event Description...</p>
+            <p class="Event-Date TomorrowEventbold">Date: </p>
+            <p class="Event-Date TomorrowEvent">Tomorrow at 6pm!</p>
+            <p><button class="button" id="firstbutton" onclick="revealEvent()">Learn More!</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column-top">
+        <div class="card" id="ThisWeekEventCard">
+          <img src="images/thomas-young-634092-unsplash.jpg" alt="Jane" class="images">
+          <div class="content-container">
+            <h2 class="Event-Title">Event Name</h2>
+            <p class="Event-Category" id="tag2">Children and Youth</p>
+            <p class="Event-Description">Some Event Description...</p>
+            <p class="Event-Date ThisWeekEventbold">Date: <p>
+            <p class="Event-Date ThisWeekEvent">This Thursday from 1pm - 3pm</p>
+            <p><button id="button1" class="button" onmouseover="updateButton1Text()" onmouseout="returnButton1Text()">Learn More!</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="searchresults-bottom">
+      <div class="column-bottom">
+      <div class="card">
+        <img src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
+        <div class="content-container">
+          <h2 class="Event-Title">Event Name</h2>
+          <p class="Event-Category" id="tag3">Homeless and Housing</p>
+          <p class="Event-Description">Some Event Description...</p>
+          <p class="Event-Date">Date: Some Date</p>
+          <p><button class="button">Learn More!</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column-bottom">
+      <div class="card">
+        <img src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
+        <div class="content-container">
+          <h2 class="Event-Title">Event Name</h2>
+          <p class="Event-Category" id="tag4">Seniors</p>
+          <p class="Event-Description">Some Event Description...</p>
+          <p class="Event-Date">Date: Some Date</p>
+          <p><button class="button">Learn More!</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column-bottom">
+      <div class="card">
+        <img src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
+        <div class="content-container">
+          <h2 class="Event-Title">Event Name</h2>
+          <p class="Event-Category" id="tag5">Education and Literacy</p>
+          <p class="Event-Description">Some Event Description...</p>
+          <p class="Event-Date">Date: Some Date</p>
+          <p><button class="button">Learn More!</button></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="searchresults-top">
+      <div class="column-top">
+        <div class="card">
+          <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
+          <div class="content-container">
+            <h2 class="Event-Title">Event Name</h2>
+            <p class="Event-Category" id="tag6">Health and Medicine</p>
+            <p class="Event-Description">Some Event Description...</p>
+            <p class="Event-Date">Date: Some Date</p>
+            <p><button class="button">Learn More!</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column-top">
+        <div class="card">
+          <img src="images/thomas-young-634092-unsplash.jpg" alt="Jane" class="images">
+          <div class="content-container">
+            <h2 class="Event-Title">Event Name</h2>
+            <p class="Event-Category" id = "tag7">Children and Youth</p>
+            <p class="Event-Description">Some Event Description...</p>
+            <p class="Event-Date">Date: Some Date</p>
+            <p><button class="button">Learn More!</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="searchresults-bottom">
+      <div class="column-bottom">
+      <div class="card">
+        <img src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
+        <div class="content-container">
+          <h2 class="Event-Title">Event Name</h2>
+          <p class="Event-Category" id = "tag8">Homeless and Housing</p>
+          <p class="Event-Description">Some Event Description...</p>
+          <p class="Event-Date">Date: Some Date</p>
+          <p><button class="button">Learn More!</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column-bottom">
+      <div class="card">
+        <img src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
+        <div class="content-container">
+          <h2 class="Event-Title">Event Name</h2>
+          <p class="Event-Category" id = "tag9">Seniors</p>
+          <p class="Event-Description">Some Event Description...</p>
+          <p class="Event-Date">Date: Some Date</p>
+          <p><button class="button">Learn More!</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column-bottom">
+      <div class="card">
+        <img src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
+        <div class="content-container">
+          <h2 class="Event-Title">Event Name</h2>
+          <p class="Event-Category" id = "tag10">Education and Literacy</p>
+          <p class="Event-Description">Some Event Description...</p>
+          <p class="Event-Date">Date: Some Date</p>
+          <p><button class="button">Learn More!</button></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="popUpEvent" class="popup">
+    <div class="contentpop">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+      <button> Click me </button>
+    </div>
+  </div>
+
+
+
+</section>
+</div>
+
+
+</body>
+
+
+
+
+</html>

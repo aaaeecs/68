@@ -39,6 +39,14 @@ h1 {
 
 }
 
+#logobutton {
+  padding:0;
+}
+
+#logobutton:hover {
+  background-color: transparent;
+}
+
 .newnav {
   /*background-color: #3e2723;*/
 
@@ -157,14 +165,14 @@ h1 {
 
 .spacingnav {
   width: 100px;
-  height: 100px;
+  height: 10px;
 
 }
 
 .filterbar {
-  position: fixed;
+  /*position: fixed;*/
   font-family: Montserrat;
-  background-color: #F5F5F5;
+  /*background-color: #F5F5F5;*/
   float:left;
   /*border-style: solid;
   border-color: black;
@@ -180,10 +188,11 @@ h1 {
 .searchresults{
   position: relative;
   margin-left: 450px;
+  margin-right: auto;
   padding-top: 10px;
-  background-color: #F5F5F5;
+  background-color: white;
   width: 900px;
-  height: 1880px;
+  height: 2000px;
 
 }
 
@@ -471,8 +480,17 @@ h1 {
 
   overflow: hidden;
   width:900px;
-  margin-left: auto;
+  height: 300px;
+  margin-left: 450px;
   margin-right: auto;
+}
+
+.stick {
+    position: fixed;
+    top: 30;
+    z-index: 9999;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 .mainsearch {
@@ -487,7 +505,7 @@ h1 {
 .feature {
   /*background-color: #F5F5F5;*/
   width: 910px;
-  height: 75%;
+  height: 80%;
   margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -685,26 +703,50 @@ h3 {
 }
 
 .regularbut {
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: left;
   float: left;
   margin-left: 30px;
   width: 150px;
-  height: 30px;
+  height: 90px;
+
+}
+
+.filterbut {
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  float: left;
+  margin-left: 12px;
+  width: 60px;
+  height: 24px;
 
 }
 
 .regularbutfirst {
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: left;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   float: left;
   margin-left: 12px;
   width: 150px;
-  height: 30px;
+  height: 90px;
+
+}
+
+.regularbutend {
+  border-radius: 5px;
+
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-left: 30px;
+  width: 150px;
+  height: 90px;
 
 }
 
@@ -720,17 +762,7 @@ h3 {
   background-color: #07f29c;
   -webkit-transition-duration: 0.4s;
 }
-.regularbutend {
-  border-radius: 10px;
 
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  margin-left: 30px;
-  width: 150px;
-  height: 30px;
-
-}
 
 .searchresults-bottom {
   margin-top: -20px;
@@ -760,5 +792,43 @@ h3 {
   font-family: ;
 }
 
+.popup {
+  /*display: none; /* Hidden by default */
+  visibility: hidden;
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 
+}
 
+.animationpop {
+  animation: 0.2s fadeIn;
+}
+
+.contentpop {
+  border-radius: 10px;
+  z-index: 20000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
