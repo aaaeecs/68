@@ -9,9 +9,10 @@ html {
 }
 
 h2 {
-  font-weight: bold;
-  margin-top: 5px;
-  margin-left: 5px;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
 p {
@@ -204,7 +205,7 @@ h1 {
   right: 0;
   bottom: 0;
   width: 900px;
-  height: 2500px;
+  height: 1890px;
   background-color: white;
   opacity: 0.9;
 
@@ -218,7 +219,7 @@ h1 {
   float: left;
   width: 80%;
   background: #F5F5F5;
-
+  font-family: 'Montserrat';
   /*background: #f1f1f1;*/
 
 }
@@ -339,8 +340,8 @@ h1 {
 
 
 .content-container {
-
-  padding: 0 16px;
+	font-family: Montserrat; 
+	padding: 0 16px;
 }
 
 
@@ -423,7 +424,7 @@ h1 {
 .lds-facebook {
 
   display: none;
-  position: absolute;
+  position: fixed;
   width: 64px;
   height: 64px;
   margin-top: 250px;
@@ -780,19 +781,19 @@ h3 {
 
 .Event-Category {
   color: grey;
-  font-family: 'Poppins', sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .Event-Description {
-  font-family: 'Poppins', sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .Event-Date {
-  font-family: 'Poppins', sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .Event-Title {
-  font-family: ;
+  font-family: Montserrat, sans-serif;
 }
 
 .popup {
@@ -869,20 +870,20 @@ h3 {
   visibility: hidden;
 }
 
-
 .text-entry {
   margin-left: 47.5px;
   margin-top: 35px;
   font-size: 12.5px;
   width: 200px;
   height: 50px;
+  font-family: 'Montserrat';
 }
 
 .sign-up-button {
    float: left;
 
   background-color: #E0E0E0;
-  font-family: sans-serif;
+  font-family: 'Montserrat';
   border: none;
   color: #757575;
   padding: 20px 60px;
@@ -900,7 +901,6 @@ h3 {
 }
 
 .text-entry-title {
-  padding-top:20px;
   margin-top: 20px;
   color: white;
   font-family: ;
@@ -910,34 +910,3 @@ h3 {
 
 
 
-
-.close-button {
-  margin-left: 263px;
-  margin-top: -70px;
-	 height: 50px;
-	 width: 50px;
-	 position: relative;
-	 box-sizing: border-box;
-	 line-height: 50px;
-	 display: inline-block;
-}
- .close-button:before, .close-button:after {
-	 transform: rotate(-45deg);
-	 content: '';
-	 position: absolute;
-	 top: 50%;
-	 left: 50%;
-	 margin-top: -5px;
-	 margin-left: -25px;
-	 display: block;
-	 height: 2px;
-	 width: 30px;
-	 background-color: #fff;
-	 transition: all 0.2s ease-out;
-}
- .close-button:after {
-	 transform: rotate(45deg);
-}
- .close-button:hover:before, .close-button:hover:after {
-	 transform: rotate(0deg);
-}
