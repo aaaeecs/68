@@ -227,27 +227,45 @@ $(function() {
 function revealEvent() {
   //var x = document.getElementById("popUpEvent");
   //var y = document.getElementById("bb");
+  var z = document.getElementById("bb");
   var x = document.getElementById("moremore");
+
   x.classList.add("animationpop");
   x.style.visibility = "visible";
   x.style.display = "inline-block";
-  window.location.hash = "#moremoremore";
+  //window.location.hash = "#moremoremore";
   var elmnt = document.getElementById("MainResults");
-  elmnt.style.height = "2500px";
+  elmnt.style.height = "2000px";
+  var y = document.getElementById("loading-blank");
+  y.style.display = "inline-block";
+  y.classList.add("animationpop");
+  z.classList.add("stop-scrolling");
   //y.addEventListener('scroll', noscroll);
 
 }
 
 function disappearEvent() {
+  var j = document.getElementById("bb");
   var x = document.getElementById("moremore");
+  var z = document.getElementById("loading-blank");
+  //x.classList.add("animationout");
+  //z.classList.add("animationout");
   x.classList.remove("animationpop");
+  j.classList.remove("stop-scrolling");
+  z.classList.remove("animationpop");
+
   x.style.visibility = "hidden";
   x.style.display = "none";
-  window.location.hash = "bottomresults";
+  //window.location.hash = "bottomresults";
   var elmnt = document.getElementById("MainResults");
   elmnt.style.height = "2000px";
   var y = document.getElementById("sign-up");
   y.innerHTML = "Sign Up!"
+  z.style.display = "none";
+  //x.classList.remove("animationout");
+  //z.classList.remove("animationout");
+
+
 }
 
 function moveScreen() {
