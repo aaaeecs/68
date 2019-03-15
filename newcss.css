@@ -340,7 +340,7 @@ h1 {
 
 
 .content-container {
-	font-family: Montserrat; 
+	font-family: Montserrat;
 	padding: 0 16px;
 }
 
@@ -816,6 +816,10 @@ h3 {
   animation: 0.5s fadeIn;
 }
 
+.animationout {
+  animation: 0.5s fadeOut;
+}
+
 .contentpop {
   border-radius: 10px;
   z-index: 20000;
@@ -833,7 +837,18 @@ h3 {
   }
   100% {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.9;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+
+    opacity: 0.9;
+  }
+  100% {
+
+    opacity: 0;
   }
 }
 
@@ -869,7 +884,9 @@ h3 {
   display: none;
   visibility: hidden;
   position: fixed;
-  margin-top: -1000px;
+  margin-left: 70px;
+  margin-top: -800px;
+  vertical-align: middle;
   /*width: 900px;
   height: 1000px;*/
   z-index: 1000;
@@ -914,5 +931,38 @@ h3 {
 }
 
 
+.close-button {
+  margin-left: 263px;
+  margin-top: -47px;
+	 height: 50px;
+	 width: 50px;
+	 position: relative;
+	 box-sizing: border-box;
+	 line-height: 50px;
+	 display: inline-block;
+}
+ .close-button:before, .close-button:after {
+	 transform: rotate(-45deg);
+	 content: '';
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 margin-top: -5px;
+	 margin-left: -25px;
+	 display: block;
+	 height: 2px;
+	 width: 30px;
+	 background-color: #fff;
+	 transition: all 0.2s ease-out;
+}
+ .close-button:after {
+	 transform: rotate(45deg);
+}
+ .close-button:hover:before, .close-button:hover:after {
+	 transform: rotate(0deg);
+}
 
-
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
