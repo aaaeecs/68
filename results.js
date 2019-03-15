@@ -158,7 +158,7 @@ function updateButton1Text() {
 }
 
 function returnButton1Text() {
-  document.getElementById("button1").innerHTML = "Learn More!";
+  document.getElementById("button1").innerHTML = "Find out more...";
 }
 
 var Thisweekactive = 0;
