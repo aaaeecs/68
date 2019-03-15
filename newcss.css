@@ -344,6 +344,12 @@ h1 {
 	padding: 0 16px;
 }
 
+.new-content{
+  font-family: Montserrat;
+  padding: 0 16px;
+  font-size: 50px;
+}
+
 
 .content-container::after {
   content: "";
@@ -1010,4 +1016,18 @@ h3 {
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+.anything-wrapper {
+  /*margin-bottom: 40px;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    opacity: 1;
+  transition: 0.5s;
+  opacity: 1;
+  /*margin-left: 75px;
+  margin-top: 20px;
+  margin-bottom: 40px;*/
+  width: 750px;
+  height: 500px;
+  text-align: center;
 }

@@ -137,6 +137,17 @@
 
   <div class="searchresults" id="MainResults">
     <section id="moremoremore"> </section>
+<div class="moreinfo" id="anything">
+    <div class = "anything-wrapper">
+      <a style="background-color: red; margin-left: 700px; margin-top: 0px;" onclick="disappearAnything()" class="close-button"></a>
+        <p style="margin-top: -20px;" class="new-content"> You're Signed Up!!! </p>
+        <img class="animationin" id="check" src="check.gif" alt="yay!" style="width:500px; margin-top:-50px">
+        <img class="animationin" id="holdcheck" src="holdcheck.jpeg" alt="yay!" style="display: none; width:500px; margin-top:-50px">
+        <p style="margin-top:-30px"> Thank you, XXX, for signing up </p>
+        <p style="margin-top:-10px"> You will receive an email confirmation shortly... </p>
+      
+    </div>
+</div>
 <div class="moreinfo" id="moremore">
     <div class = "popupwrapper">
       <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
@@ -149,15 +160,16 @@
       </div>
   </div>
   <div class="register-info">
-    <form action="">
+
 
       <h2 class="text-entry-title"> Register </h2>
       <a onclick="disappearEvent()" class="close-button"></a>
       <input class="text-entry" type="text" onchange="incrementCount()" placeholder="Name..." name="name-entry">
       <input class="text-entry" type="text" onchange="incrementCount()" placeholder="Email..." name="email-entry">
+
       <input class="text-entry" type="text" oninput="incrementCount()" placeholder="Phone-Number..." name="phone-number">
       <button class="sign-up-button" id = "sign-up" type="submit" onclick="success()"> Sign Up! </button>
-    </form>
+
 
 
 
