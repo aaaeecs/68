@@ -188,7 +188,7 @@ h1 {
 
 .searchresults{
   position: relative;
-  margin-left: 450px;
+  margin-left: 32%;
   margin-right: auto;
   padding-top: 10px;
   background-color: white;
@@ -630,7 +630,7 @@ h1 {
 
 .bottomlevel {
   width: 100%;
-  height: auto;
+  height: 2100px;
   /*opacity: 0.97;*/
   background-color: white;
   z-index: 1000;
@@ -659,6 +659,51 @@ h1 {
   animation: sdb04 2s infinite;
   box-sizing: border-box;
 }
+
+#bottombuttonsec a {
+  padding-top: 60px;
+}
+#bottombuttonsec a span {
+  z-index: 1000000;
+  position: absolute;
+  top: 2000px;
+  margin-left: -120%;
+  background-color: white;
+  /*left: 50%;*/
+  width: 40px;
+  height: 40px;
+  /*margin-left: -12px;*/
+  border-left: 4px solid #5d4037;
+  border-bottom: 4px solid #5d4037;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-animation: sdb04up 2s infinite;
+  animation: sdb04up 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb04up {
+  0% {
+    -webkit-transform: rotate(135deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(135deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(135deg) translate(0, 0);
+  }
+}
+@keyframes sdb04up {
+  0% {
+    transform: rotate(135deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(135deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(135deg) translate(0, 0);
+  }
+}
+
 @-webkit-keyframes sdb04 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
