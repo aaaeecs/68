@@ -19,6 +19,7 @@ var healthbool = false;
 var homelessnessbool = false;
 var seniorsbool = false;
 var veteransbool = false;
+var popuppresent = 0;
 
 
 function openBurgerMenu() {
@@ -36,6 +37,7 @@ function updateAboutNav() {
   document.getElementById("SignIn").classList.add("notactive");
   document.getElementById("Home").classList.add("notactive");
   document.getElementById("Home").classList.remove('active');
+  AboutComingSoon();
 }
 function updateSignInNav() {
   document.getElementById("About").classList.remove("active");
@@ -44,6 +46,7 @@ function updateSignInNav() {
   document.getElementById("SignIn").classList.remove("notactive");
   document.getElementById("Home").classList.add("notactive");
   document.getElementById("Home").classList.remove('active');
+  SignInComingSoon();
 }
 
 function updateHomeNav() {
@@ -69,8 +72,10 @@ function updateResults() {
   x.style.display = "inline-block";
   y.style.display = "inline-block";
   updateTags();
+  if (popuppresent == 0){
   setTimeout(function(){ x.style.display = "none" }, 3000);
   setTimeout(function(){ y.style.display = "none" }, 3000);
+}
   document.getElementById("UpdateButton").classList.add("UpdateResultsGrey")
   document.getElementById("UpdateButton").classList.remove("UpdateResults")
 }
@@ -135,6 +140,7 @@ function veterans() {
 }
 
 function updateTags() {
+  if (z != ""){
   document.getElementById("tag1").innerHTML = z;
   document.getElementById("tag2").innerHTML = z;
   document.getElementById("tag3").innerHTML = z;
@@ -145,6 +151,7 @@ function updateTags() {
   document.getElementById("tag8").innerHTML = z;
   document.getElementById("tag9").innerHTML = z;
   document.getElementById("tag10").innerHTML = z;
+}
 }
 
 function searchUpdateTags() {
@@ -240,6 +247,28 @@ function revealEvent() {
   y.style.display = "inline-block";
   y.classList.add("animationpop");
   z.classList.add("stop-scrolling");
+  popuppresent = 1;
+  //y.addEventListener('scroll', noscroll);
+
+}
+
+function revealEvent2() {
+  //var x = document.getElementById("popUpEvent");
+  //var y = document.getElementById("bb");
+  var z = document.getElementById("bb");
+  var x = document.getElementById("moremore2");
+
+  x.classList.add("animationpop");
+  x.style.visibility = "visible";
+  x.style.display = "inline-block";
+  //window.location.hash = "#moremoremore";
+  var elmnt = document.getElementById("MainResults");
+  elmnt.style.height = "2000px";
+  var y = document.getElementById("loading-blank");
+  y.style.display = "inline-block";
+  y.classList.add("animationpop");
+  z.classList.add("stop-scrolling");
+  popuppresent = 1;
   //y.addEventListener('scroll', noscroll);
 
 }
@@ -260,6 +289,7 @@ function revealAnything() {
   y.style.display = "inline-block";
   y.classList.add("animationpop");
   z.classList.add("stop-scrolling");
+  popuppresent = 1;
   //y.addEventListener('scroll', noscroll);
 
 }
@@ -267,6 +297,7 @@ function revealAnything() {
 function disappearEvent() {
   var j = document.getElementById("bb");
   var x = document.getElementById("moremore");
+  //var a = document.getElementById("moremore2");
   var z = document.getElementById("loading-blank");
   //x.classList.add("animationout");
   //z.classList.add("animationout");
@@ -276,12 +307,15 @@ function disappearEvent() {
 
   x.style.visibility = "hidden";
   x.style.display = "none";
+  //a.style.visibility = "hidden";
+  //a.style.display = "none";
   //window.location.hash = "bottomresults";
   var elmnt = document.getElementById("MainResults");
   elmnt.style.height = "2000px";
   var y = document.getElementById("sign-up");
   y.innerHTML = "Sign Up!"
   z.style.display = "none";
+  popuppresent = 0;
   //x.classList.remove("animationout");
   //z.classList.remove("animationout");
 
@@ -306,6 +340,7 @@ function disappearAnything() {
   var y = document.getElementById("sign-up");
   y.innerHTML = "Sign Up!"
   z.style.display = "none";
+  popuppresent = 0;
   //x.classList.remove("animationout");
   //z.classList.remove("animationout");
 
@@ -335,7 +370,7 @@ function incrementCount() {
 
 function hideGIF() {
   var x = document.getElementById("check");
-  
+
   var y = document.getElementById("holdcheck");
   y.style.display = "inline-block";
   x.style.display = "none";
@@ -343,11 +378,26 @@ function hideGIF() {
 
 function success() {
     var x = document.getElementById("sign-up");
+    var y = document.getElementById("name-entry").value
+    var z = document.getElementById("personalized")
+    z.innerHTML = y + ", you're signed up!!!";
     x.innerHTML = "Success!"
     x.style.background = "#E0E0E0";
     x.style.color = '#757575';
-    
+
     disappearEvent();
     revealAnything();
     setTimeout(hideGIF, 2000);
+}
+
+function AboutComingSoon() {
+  var x = document.getElementById("About")
+  x.innerHTML = "Coming Soon!"
+  setTimeout(function again(){x.innerHTML = "About"}, 5000)
+}
+
+function SignInComingSoon() {
+  var x = document.getElementById("SignIn")
+  x.innerHTML = "Coming Soon!"
+  setTimeout(function again2(){x.innerHTML = "Sign In"}, 5000)
 }

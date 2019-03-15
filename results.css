@@ -157,7 +157,6 @@ h1 {
   right: 0;
   bottom: 0;
   width: 900px;
-  height: 1930px;
   background-color: white;
   opacity: 0.9;
 
@@ -373,9 +372,9 @@ h1 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.lds-facebook {
+/*.lds-facebook {
   display: none;
-  /*position: fixed;*/
+  /*position: fixed;
   width: 64px;
   height: 64px;
   margin-top: 350px;
@@ -383,11 +382,11 @@ h1 {
 }
 .lds-facebook div {
   display: inline-block;
-  position: absolute;
+  /*position: absolute;
   left: 6px;
   width: 13px;
   background: #260e04;
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;*/
 }
 .lds-facebook div:nth-child(1) {
   left: 6px;
