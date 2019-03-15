@@ -244,9 +244,53 @@ function revealEvent() {
 
 }
 
+function revealAnything() {
+  //var x = document.getElementById("popUpEvent");
+  //var y = document.getElementById("bb");
+  var z = document.getElementById("bb");
+  var x = document.getElementById("anything");
+
+  x.classList.add("animationpop");
+  x.style.visibility = "visible";
+  x.style.display = "inline-block";
+  //window.location.hash = "#moremoremore";
+  var elmnt = document.getElementById("MainResults");
+  elmnt.style.height = "2000px";
+  var y = document.getElementById("loading-blank");
+  y.style.display = "inline-block";
+  y.classList.add("animationpop");
+  z.classList.add("stop-scrolling");
+  //y.addEventListener('scroll', noscroll);
+
+}
+
 function disappearEvent() {
   var j = document.getElementById("bb");
   var x = document.getElementById("moremore");
+  var z = document.getElementById("loading-blank");
+  //x.classList.add("animationout");
+  //z.classList.add("animationout");
+  x.classList.remove("animationpop");
+  j.classList.remove("stop-scrolling");
+  z.classList.remove("animationpop");
+
+  x.style.visibility = "hidden";
+  x.style.display = "none";
+  //window.location.hash = "bottomresults";
+  var elmnt = document.getElementById("MainResults");
+  elmnt.style.height = "2000px";
+  var y = document.getElementById("sign-up");
+  y.innerHTML = "Sign Up!"
+  z.style.display = "none";
+  //x.classList.remove("animationout");
+  //z.classList.remove("animationout");
+
+
+}
+
+function disappearAnything() {
+  var j = document.getElementById("bb");
+  var x = document.getElementById("anything");
   var z = document.getElementById("loading-blank");
   //x.classList.add("animationout");
   //z.classList.add("animationout");
@@ -289,9 +333,21 @@ function incrementCount() {
   }
 }
 
+function hideGIF() {
+  var x = document.getElementById("check");
+  
+  var y = document.getElementById("holdcheck");
+  y.style.display = "inline-block";
+  x.style.display = "none";
+}
+
 function success() {
     var x = document.getElementById("sign-up");
     x.innerHTML = "Success!"
     x.style.background = "#E0E0E0";
     x.style.color = '#757575';
+    
+    disappearEvent();
+    revealAnything();
+    setTimeout(hideGIF, 2000);
 }
