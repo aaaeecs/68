@@ -131,7 +131,9 @@ function validateForm() {
     return false;
   }
   if (Number.isInteger(parseInt(c))) {
+
     alert("Email field cannot be a number");
+
     document.forms["myForm"]["email-entry"].value = "";
     return false;
   }
