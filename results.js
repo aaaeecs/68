@@ -131,7 +131,7 @@ function validateForm() {
     return false;
   }
   if (Number.isInteger(parseInt(c))) {
-    alert("Email name cannot be a number");
+    alert("Email field cannot be a number");
     document.forms["myForm"]["email-entry"].value = "";
     return false;
   }
@@ -508,6 +508,7 @@ function disappearEvent() {
   y.innerHTML = "Sign Up!"
   z.style.display = "none";
   popuppresent = 0;
+  //document.getElementById("email-confirmation") = "You will receive an email confirmation shortly...";
   //x.classList.remove("animationout");
   //z.classList.remove("animationout");
 
@@ -573,11 +574,17 @@ function success() {
     var x = document.getElementById("sign-up");
     var y = document.getElementById("name-entry").value
     var z = document.getElementById("personalized")
+    var email = document.getElementById("email-notif");
     z.innerHTML = y + ", you're signed up!!!";
     x.innerHTML = "Success!"
     x.style.background = "#E0E0E0";
     x.style.color = '#757575';
-
+    if (email.checked == false){
+      document.getElementById("email-confirmation").innerHTML = "You will NOT receive an email confirmation..."
+    }
+    if (email.checked == true){
+      document.getElementById("email-confirmation").innerHTML = "You will receive an email confirmation shortly..."
+    }
     disappearEvent();
     revealAnything();
     setTimeout(hideGIF, 2000);
