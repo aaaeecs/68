@@ -20,6 +20,7 @@ var homelessnessbool = false;
 var seniorsbool = false;
 var veteransbool = false;
 var popuppresent = 0;
+var countforsign = 0;
 
 
 function openBurgerMenu() {
@@ -84,6 +85,68 @@ function changeButton() {
   document.getElementById("UpdateButton").classList.remove("UpdateResultsGrey")
   document.getElementById("UpdateButton").classList.add("UpdateResults")
 }
+
+function validateForm() {
+  var a = document.forms["myForm"]["first-name-entry"].value;
+  var b = document.forms["myForm"]["last-name-entry"].value;
+  var c = document.forms["myForm"]["email-entry"].value;
+  var d = document.forms["myForm"]["phone-number"].value;
+  if (a == "") {
+    alert("First Name must be filled out");
+    document.forms["myForm"]["first-name-entry"].value = "";
+    return false;
+  }
+  if (Number.isInteger(parseInt(a))) {
+    alert("First name cannot be a number");
+    document.forms["myForm"]["first-name-entry"].value = "";
+    return false;
+  }
+  if (b == "") {
+    alert("Last name must be filled out");
+    document.forms["myForm"]["last-name-entry"].value = "";
+    return false;
+  }
+  if (Number.isInteger(parseInt(b))) {
+    alert("Last name cannot be a number");
+    document.forms["myForm"]["last-name-entry"].value = "";
+    return false;
+  }
+  if (c == "") {
+    alert("Email must be filled out");
+    document.forms["myForm"]["email-entry"].value = "";
+    return false;
+  }
+  if (Number.isInteger(parseInt(c))) {
+    alert("Email name cannot be a number");
+    document.forms["myForm"]["email-entry"].value = "";
+    return false;
+  }
+  if (d == "") {
+    alert("Phone number must be filled out");
+    document.forms["myForm"]["phone-number"].value = "";
+    return false;
+  }
+  var x = parseInt(d);
+  if (isNaN(x)) {
+    alert("Phone number must be a number");
+    document.forms["myForm"]["phone-number"].value = "";
+    return false;
+  }
+  if (d.length != 10) {
+    alert("Phone number must be 10 digits");
+    document.forms["myForm"]["phone-number"].value = "";
+    return false;
+  }
+
+  success();
+  document.forms["myForm"]["first-name-entry"].value = "";
+  document.forms["myForm"]["last-name-entry"].value = "";
+  document.forms["myForm"]["email-entry"].value = "";
+  document.forms["myForm"]["phone-number"].value = "";
+  return false;
+}
+
+
 
 function advocacy() {
   advocacybool = true;
@@ -343,6 +406,7 @@ function disappearAnything() {
   popuppresent = 0;
   //x.classList.remove("animationout");
   //z.classList.remove("animationout");
+  countforsign = 0
 
 
 }
@@ -357,7 +421,7 @@ function moveScreen() {
   //window.location = "#moremoremore";
 }
 
-var countforsign = 0;
+
 
 function incrementCount() {
   var x = document.getElementById("sign-up");
