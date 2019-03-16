@@ -145,7 +145,7 @@
         <img class="animationin" id="check" src="check.gif" alt="yay!" style="width:500px; margin-top:-50px">
         <img class="animationin" id="holdcheck" src="holdcheck.jpeg" alt="yay!" style="display: none; width:500px; margin-top:-50px">
         <p style="margin-top:-30px"> Thank you very much for signing up! </p>
-        <p style="margin-top:-10px"> You will receive an email confirmation shortly... </p>
+        <p id = "email-confirmation" style="margin-top:-10px"> You will receive an email confirmation shortly... </p>
 
     </div>
 </div>
@@ -174,7 +174,9 @@
       <input class="text-entry" type="text" oninput="incrementCount()" placeholder="Your phone number..." name="phone-number">
 
     <label class="container" id="email-notification"> I want a confirmation email...
-      <input type="checkbox">
+
+      <input type="checkbox" id="email-notif">
+
       <span class="checkmark"></span>
     </label>
 
