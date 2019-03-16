@@ -140,7 +140,7 @@
     <section id="moremoremore"> </section>
 <div class="moreinfo" id="anything">
     <div class = "anything-wrapper">
-      <a style="background-color: red; margin-left: 700px; margin-top: 0px; padding-left: 5px;" onclick="disappearAnything()" class="close-button"></a>
+      <a style="background-color: red; margin-left: 700px; margin-top: 0px; padding-left: 5px;" onclick="disappearAnything()" class="close-buttona"></a>
         <p id ="personalized" style="margin-top: -20px;" class="new-content"> You're Signed Up!!! </p>
         <img class="animationin" id="check" src="check.gif" alt="yay!" style="width:500px; margin-top:-50px">
         <img class="animationin" id="holdcheck" src="holdcheck.jpeg" alt="yay!" style="display: none; width:500px; margin-top:-50px">
@@ -151,13 +151,14 @@
 </div>
 <div class="moreinfo" id="moremore">
     <div class = "popupwrapper">
-      <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
+      <img id="popimg" src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
       <div class="content-container">
-        <h2 class="Event-Title">Volunteer at Evanston Hospital</h2>
+        <h2 id = "titlepop" class="Event-Title">Volunteer at Evanston Hospital</h2>
         <!--<p class="Event-Category" id="tag1">Health and Medicine</p>-->
-        <p class="Event-Description">We are looking for five passionate and hardworking individuals to assist our doctors twice a week with various medical tasks. Anyone is welcome to apply - those interested in PreMed or Nursing are preferable. </p>
-        <p class="Event-Date TomorrowEventbold">Date: </p>
-        <p class="Event-Date TomorrowEvent">Starting tomorrow!!</p>
+        <p id = "descriptionpop" class="Event-Description">We are looking for five passionate and hardworking individuals to assist our doctors twice a week with various medical tasks. Anyone is welcome to apply - those interested in PreMed or Nursing are preferable. </p>
+        <!--<p class="Event-Date TomorrowEventbold">Date: </p>-->
+        <p id = "datepop" class="Event-Date">Date: Starting tomorrow!!</p>
+        <p id = "remainingpop" class="Event-Date" style="color: red; font-style: bold;"></p>
       </div>
   </div>
   <div class="register-info">
@@ -219,27 +220,27 @@
     <div class="searchresults-top">
       <div class="column-top">
         <div class="card" id="TomorrowEventCard">
-          <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
+          <img id = "image1" src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
           <div class="content-container">
-            <h2 class="Event-Title">Volunteer at Evanston Hospital</h2>
+            <h2 class="Event-Title" id = "title1">Volunteer at Evanston Hospital</h2>
             <p class="Event-Category" id="tag1">Health and Medicine</p>
-            <p class="Event-Description">We are looking for five passionate and hardworking individuals to assist our doctors twice a week with various medical tasks.</p>
+            <p class="Event-Description" id="description1">We are looking for five passionate and hardworking individuals to assist our doctors twice a week with various medical tasks.</p>
             <p class="Event-Date TomorrowEventbold">Date: </p>
-            <p class="Event-Date TomorrowEvent">Starting tomorrow!!</p>
-            <p><button class="button" id="firstbutton" onclick="revealEvent()">Find out more...</button></p>
+            <p id="date1" class="Event-Date TomorrowEvent">Starting tomorrow!!</p>
+            <p><button class="button" id="firstbutton" onclick="popbox1()">Find out more...</button></p>
           </div>
         </div>
       </div>
       <div class="column-top">
         <div class="card" id="ThisWeekEventCard">
-          <img src="images/thomas-young-634092-unsplash.jpg" alt="Jane" class="images">
+          <img id = "image2" src="images/thomas-young-634092-unsplash.jpg" alt="Jane" class="images">
           <div class="content-container">
-            <h2 class="Event-Title">Primary School Homework Club </h2>
+            <h2 class="Event-Title" id = "title2">Primary School Homework Club </h2>
             <p class="Event-Category" id="tag2">Children and Youth</p>
-            <p class="Event-Description">Evanston Primary School is looking for volunteers to lead a homework club once a week from 3 until 5pm after school.</p>
+            <p class="Event-Description" id="description2">Evanston Primary School is looking for volunteers to lead a homework club once a week from 3 until 5pm after school.</p>
             <p class="Event-Date ThisWeekEventbold">Date: <p>
-            <p class="Event-Date ThisWeekEvent">This Thursday from 3pm - 5pm</p>
-            <p><button id="button1" class="button" onmouseover="updateButton1Text()" onmouseout="returnButton1Text()" onclick="revealEvent()">Find out more...</button></p>
+            <p id="date2" class="Event-Date ThisWeekEvent">This Thursday from 3pm - 5pm</p>
+            <p><button id="button1" class="button" onmouseover="updateButton1Text()" onmouseout="returnButton1Text()" onclick="popbox2()">Find out more...</button></p>
           </div>
         </div>
       </div>
@@ -247,37 +248,37 @@
     <div class="searchresults-bottom">
       <div class="column-bottom">
       <div class="card">
-        <img src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
+        <img id = "image3" src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
         <div class="content-container">
-          <h2 class="Event-Title">Housing Drive</h2>
+          <h2 class="Event-Title" id = "title3">Housing Drive</h2>
           <p class="Event-Category" id="tag3">Homeless and Housing</p>
-          <p class="Event-Description">We are looking for volunteers to help work in the homeless housing office in Chicago</p>
-          <p class="Event-Date">Date: Wednesday, 6pm</p>
-          <p><button class="button" onclick="revealEvent()">Find out more...</button></p>
+          <p class="Event-Description" id = "description3">We are looking for volunteers to help work in the homeless housing office in Chicago</p>
+          <p id = "date3" class="Event-Date">Date: Wednesday, 6pm</p>
+          <p><button class="button" onclick="popbox3()">Find out more...</button></p>
         </div>
       </div>
     </div>
     <div class="column-bottom">
       <div class="card">
-        <img src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
+        <img id = "image4" src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
         <div class="content-container">
-          <h2 class="Event-Title">Coffee Visits</h2>
+          <h2 id = "title4" class="Event-Title">Coffee Visits</h2>
           <p class="Event-Category" id="tag4">Seniors</p>
-          <p class="Event-Description">Evanston residents are looking for you - to give up 30 mins and have a chat!</p>
-          <p class="Event-Date">Date: Next Tuesday, 3pm</p>
-          <p><button class="button" onclick="revealEvent()">Find out more...</button></p>
+          <p id = "description4" class="Event-Description">Evanston residents are looking for you - to give up 30 mins and have a chat!</p>
+          <p id = "date4" class="Event-Date">Date: Next Tuesday, 3pm</p>
+          <p><button class="button" onclick="popbox4()">Find out more...</button></p>
         </div>
       </div>
     </div>
     <div class="column-bottom">
       <div class="card">
-        <img src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
+        <img id = "image5" src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
         <div class="content-container">
-          <h2 class="Event-Title">Teaching Assistant</h2>
+          <h2 id = "title5" class="Event-Title">Teaching Assistant</h2>
           <p class="Event-Category" id="tag5">Education and Literacy</p>
-          <p class="Event-Description">Evanston Public School is looking for a math teaching assistant. </p>
-          <p class="Event-Date">Date: Mondays at 2pm</p>
-          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
+          <p id = "description5" class="Event-Description">Evanston Public School is looking for a math teaching assistant. </p>
+          <p id = "date5" class="Event-Date">Date: Mondays at 2pm</p>
+          <p><button class="button" onclick="popbox5()">Find out more...</button></p>
         </div>
       </div>
     </div>
@@ -285,25 +286,25 @@
     <div class="searchresults-top">
       <div class="column-top">
         <div class="card">
-          <img src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
+          <img id = "image6" src="images/rawpixel-760103-unsplash.jpg" alt="Jane" class="images">
           <div class="content-container">
-            <h2 class="Event-Title">Patient Care Volunteer</h2>
+            <h2 id = "title6" class="Event-Title">Patient Care Volunteer</h2>
             <p class="Event-Category" id="tag6">Health and Medicine</p>
-            <p class="Event-Description">We are looking for able bodies to spend time to build up the confidence of our patients.</p>
-            <p class="Event-Date">Date: Sundays at 12pm</p>
-            <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
+            <p id = "description6" class="Event-Description">We are looking for able bodies to spend time to build up the confidence of our patients.</p>
+            <p id = "date6" class="Event-Date">Date: Sundays at 12pm</p>
+            <p><button class="button" onclick="popbox6()">Find out more...</button></p>
           </div>
         </div>
       </div>
       <div class="column-top">
         <div class="card">
-          <img src="images/thomas-young-634092-unsplash.jpg" alt="Jane" class="images">
+          <img id = "image7" src="images/thomas-young-634092-unsplash.jpg" alt="Jane" class="images">
           <div class="content-container">
-            <h2 class="Event-Title">Kids in Action</h2>
+            <h2 id = "title7" class="Event-Title">Kids in Action</h2>
             <p class="Event-Category" id = "tag7">Children and Youth</p>
-            <p class="Event-Description">Looking for volunteers committed to mentoring children and activites they are able to engage in.</p>
-            <p class="Event-Date">Date: Saturdays at 2pm</p>
-            <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
+            <p id = "description7" class="Event-Description">Looking for volunteers committed to mentoring children and activites they are able to engage in.</p>
+            <p id = "date7" class="Event-Date">Date: Saturdays at 2pm</p>
+            <p><button class="button" onclick="popbox7()">Find out more...</button></p>
           </div>
         </div>
       </div>
@@ -311,37 +312,37 @@
     <div class="searchresults-bottom">
       <div class="column-bottom">
       <div class="card">
-        <img src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
+        <img id = "image8" src="images/matt-collamer-555626-unsplash.jpg" alt="Jane" class="images">
         <div class="content-container">
-          <h2 class="Event-Title">Food Drive</h2>
+          <h2 id = "title8" class="Event-Title">Food Drive</h2>
           <p class="Event-Category" id = "tag8">Homeless and Housing</p>
-          <p class="Event-Description">Need Volunteers to help organize food for the homeless.</p>
-          <p class="Event-Date">Date: Wednesday at 5pm</p>
-          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
+          <p id = "description8" class="Event-Description">Need Volunteers to help organize food for the homeless.</p>
+          <p id = "date8" class="Event-Date">Date: Wednesday at 5pm</p>
+          <p><button class="button" onclick="popbox8()">Find out more...</button></p>
         </div>
       </div>
     </div>
     <div class="column-bottom">
       <div class="card">
-        <img src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
+        <img id = "image9" src="images/ap-x-90-395258-unsplash.jpg" alt="Jane" class="images">
         <div class="content-container">
-          <h2 class="Event-Title">Friend in Need</h2>
+          <h2 id = "title9" class="Event-Title">Friend in Need</h2>
           <p class="Event-Category" id = "tag9">Seniors</p>
-          <p class="Event-Description">Searching for people to give company to a wonderful group of elders.</p>
-          <p class="Event-Date">Date: Sundays at 10am</p>
-          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
+          <p id = "description9" class="Event-Description">Searching for people to give company to a wonderful group of elders.</p>
+          <p id = "date9" class="Event-Date">Date: Sundays at 10am</p>
+          <p><button class="button" onclick="popbox9()">Find out more...</button></p>
         </div>
       </div>
     </div>
     <div class="column-bottom">
       <div class="card">
-        <img src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
+        <img id = "image10" src="images/nikhita-s-615116-unsplash.jpg" alt="Jane" class="images">
         <div class="content-container">
-          <h2 class="Event-Title">Teach Kids STEM</h2>
+          <h2 id = "title10" class="Event-Title">Teach Kids STEM</h2>
           <p class="Event-Category" id = "tag10">Education and Literacy</p>
-          <p class="Event-Description">Looking for people to regularly teach STEM to kids with less priveliges</p>
-          <p class="Event-Date">Date: Mondays at 6pm</p>
-          <p><button class="button" onclick="revealEvent()">Learn More!</button></p>
+          <p id = "description10" class="Event-Description">Looking for people to regularly teach STEM to kids with less priveliges</p>
+          <p id = "date10" class="Event-Date">Date: Mondays at 6pm</p>
+          <p><button class="button" onclick="popbox10()">Find out more...</button></p>
         </div>
       </div>
     </div>
