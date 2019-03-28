@@ -350,7 +350,7 @@ h1 {
 
 .UpdateResults {
   background-color: #07f29c;
-  font-family: sans-serif;
+  font-family: 'Montserrat';
   border: none;
   color: white;
   padding: 12px 16px;
@@ -626,6 +626,8 @@ h1 {
 
 .time-button:active {
   background-color: #07f29c;
+  font-size: 11px;
+  font-family: 'Montserrat';
 }
 
 .time-button:hover {
@@ -642,12 +644,12 @@ h1 {
 .time-button-active {
   float: left;
 
-  font-family: sans-serif;
+  font-family: 'Montserrat';
   border: none;
   color: white;
   padding: 10px 14px;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   margin: 2px;
   margin-bottom: 8px;
 
